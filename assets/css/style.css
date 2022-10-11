@@ -29,6 +29,7 @@ header {
 .logoimg {
     width: 80px;
     height: 80px;
+    border-radius: 40px;
     background-color: var(--bg-pri);
 }
 .menu {
@@ -79,4 +80,38 @@ nav li {
     height: 100%;
     display: inline-block;
     background-color: var(--bg-quad);
+}
+.banner .slidearea {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-sec)
+}
+.banner h1 {
+    text-transform: uppercase;
+    font-size: bold;
+    font-size: 50px;
+}
+.banner h1 span {
+    color: var(--bg-pri);
+}
+.banner h2 {
+    text-transform: uppercase;
+    font-size: bold;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.banner a {
+    display: block;
+    background-color: var(--bg-pri);
+    color: var(--bg-sec);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 30px;
 }
