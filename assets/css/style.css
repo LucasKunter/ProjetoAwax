@@ -10,6 +10,7 @@
 }
 body {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 header {
     height: 100px;
@@ -59,7 +60,7 @@ nav li {
 .menu li a:hover,
 .menu .active a {
     border-bottom: 5px solid var(--bg-pri);
-    color: #ccc;
+    color: var(--bg-pri);
 }
 
 
@@ -114,4 +115,28 @@ nav li {
     font-size: 13px;
     font-weight: 600;
     margin-top: 30px;
+}
+.sliderpointers {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .pointer {
+    border: 2px solid var(--bg-pri);
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.banner .pointer.active {  
+    background-color: var(--bg-pri);
+}
+.default {
+    background-color: rgb(255, 255, 255);
 }
